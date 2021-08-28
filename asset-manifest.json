@@ -1,20 +1,35 @@
 {
   "files": {
-    "main.css": "/steakhouse/static/css/main.bb50306f.chunk.css",
-    "main.js": "/steakhouse/static/js/main.9bdbb634.chunk.js",
-    "main.js.map": "/steakhouse/static/js/main.9bdbb634.chunk.js.map",
+    "main.css": "/steakhouse/static/css/main.a867e190.chunk.css",
+    "main.js": "/steakhouse/static/js/main.72faf0de.chunk.js",
+    "main.js.map": "/steakhouse/static/js/main.72faf0de.chunk.js.map",
     "runtime-main.js": "/steakhouse/static/js/runtime-main.c9ac63f5.js",
     "runtime-main.js.map": "/steakhouse/static/js/runtime-main.c9ac63f5.js.map",
     "static/js/2.bb5cf1cf.chunk.js": "/steakhouse/static/js/2.bb5cf1cf.chunk.js",
     "static/js/2.bb5cf1cf.chunk.js.map": "/steakhouse/static/js/2.bb5cf1cf.chunk.js.map",
     "index.html": "/steakhouse/index.html",
-    "static/css/main.bb50306f.chunk.css.map": "/steakhouse/static/css/main.bb50306f.chunk.css.map",
-    "static/js/2.bb5cf1cf.chunk.js.LICENSE.txt": "/steakhouse/static/js/2.bb5cf1cf.chunk.js.LICENSE.txt"
+    "static/css/main.a867e190.chunk.css.map": "/steakhouse/static/css/main.a867e190.chunk.css.map",
+    "static/js/2.bb5cf1cf.chunk.js.LICENSE.txt": "/steakhouse/static/js/2.bb5cf1cf.chunk.js.LICENSE.txt",
+    "static/media/about-bg.jpg": "/steakhouse/static/media/about-bg.54448ddc.jpg",
+    "static/media/contact.jpg": "/steakhouse/static/media/contact.5153ca7b.jpg",
+    "static/media/customer-1.jpg": "/steakhouse/static/media/customer-1.1e178f03.jpg",
+    "static/media/customer-img.jpg": "/steakhouse/static/media/customer-img.e8b39294.jpg",
+    "static/media/customer-img1.jpg": "/steakhouse/static/media/customer-img1.2df7baff.jpg",
+    "static/media/desserts.jpg": "/steakhouse/static/media/desserts.08f509f0.jpg",
+    "static/media/food-1.jpg": "/steakhouse/static/media/food-1.914c0722.jpg",
+    "static/media/food-2.jpg": "/steakhouse/static/media/food-2.e1e11922.jpg",
+    "static/media/food-3.jpg": "/steakhouse/static/media/food-3.f430eac6.jpg",
+    "static/media/food-4.jpg": "/steakhouse/static/media/food-4.3d3f97aa.jpg",
+    "static/media/hero-bg.jpg": "/steakhouse/static/media/hero-bg.d0e2b313.jpg",
+    "static/media/logo.png": "/steakhouse/static/media/logo.425ebf8c.png",
+    "static/media/menu-bg.jpg": "/steakhouse/static/media/menu-bg.c69e44c4.jpg",
+    "static/media/mocktails.jpg": "/steakhouse/static/media/mocktails.c472f4ec.jpg",
+    "static/media/steaks.jpg": "/steakhouse/static/media/steaks.2b2caa7c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c9ac63f5.js",
     "static/js/2.bb5cf1cf.chunk.js",
-    "static/css/main.bb50306f.chunk.css",
-    "static/js/main.9bdbb634.chunk.js"
+    "static/css/main.a867e190.chunk.css",
+    "static/js/main.72faf0de.chunk.js"
   ]
 }
