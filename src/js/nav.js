@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import ReactDOM from "react-dom";
 import { TabContext } from "./lpage.js";
-import "./css/nav.css";
-import useWindowSize from "./hooks/useWindowSize.js";
+import "./../css/nav.css";
+import useWindowSize from "./../hooks/useWindowSize.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const tabs = ["home", "about", "menu", "contact"];
 
@@ -51,7 +51,7 @@ const Nav = (props) => {
 
         <ul ref={ul}>
           <button className="close" onClick={() => close()}>
-            X
+            <FontAwesomeIcon icon={faTimes} className="cls"></FontAwesomeIcon>
           </button>
           {tabs.map((e, i) => (
             <li

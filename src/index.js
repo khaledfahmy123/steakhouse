@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Lpage from "./lpage.js";
+import Lpage from "./js/lpage.js";
 
 function App() {
   return (

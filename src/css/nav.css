@@ -110,7 +110,6 @@ nav .btn {
 
 .close {
   display: none;
-  font-family: tahoma;
 }
 
 @media screen and (max-width: 1024px) {
@@ -135,7 +134,8 @@ nav .btn {
     display: block;
   }
   nav {
-    grid-template-areas: "logo bar" "ul ul";
+    grid-template-areas: "logo logo bar" "ul ul ul";
+    grid-template-columns: 1fr 0.5fr 1fr;
   }
   nav a {
     justify-self: start;
@@ -161,12 +161,14 @@ nav .btn {
     height: 50px;
     top: 0;
     align-self: flex-end;
-    font-size: 25px;
     background: none;
     border: none;
-    color: #fff;
-    font-family: tahoma;
     cursor: pointer;
+  }
+  .cls {
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.2s ease;
   }
   nav ul li {
     padding: 30px;
