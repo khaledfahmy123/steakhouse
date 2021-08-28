@@ -8,25 +8,35 @@ import {
   faBars,
 } from "@fortawesome/free-brands-svg-icons";
 
+function importAll(r) {
+  let images = {};
+  r.keys().forEach((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+
+const images = importAll(
+  require.context("./../imgs", false, /\.(png|jpe?g|svg)$/)
+);
+
+// console.log(images["food-1.jpg"].default);
+
 export const dishes = [
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/food-1.jpg",
+    img: images["food-1.jpg"].default,
     text: "Wood Fire Charred Steak with BBQ Sauce",
   },
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/food-2.jpg",
+    img: images["food-2.jpg"].default,
     text: "Oven-roasted Beef with tossed vegetables",
   },
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/food-3.jpg",
+    img: images["food-3.jpg"].default,
     text: "Roasted Lamb with Seasoned Potatoes",
   },
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/food-4.jpg",
+    img: images["food-4.jpg"].default,
     text: "BBQ Ribs with Vegies and French Fries",
   },
 ];
@@ -34,8 +44,7 @@ export const dishes = [
 export const recipes = [
   {
     name: "Smoking Steaks",
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/steaks.jpg",
+    img: images["steaks.jpg"].default,
     prices: [
       {
         type: "Pan Seared Steak – $25",
@@ -61,8 +70,7 @@ export const recipes = [
   },
   {
     name: "Classic Desserts",
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/desserts.jpg",
+    img: images["desserts.jpg"].default,
     prices: [
       {
         type: "Almond Torte – $15",
@@ -89,8 +97,7 @@ export const recipes = [
 
   {
     name: "Chilled Mocktails",
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/mocktails.jpg",
+    img: images["mocktails.jpg"].default,
     prices: [
       {
         type: "Virgin Cucumber Gimlet – $25",
@@ -118,22 +125,19 @@ export const recipes = [
 
 export const pp_reviews = [
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/customer-img.jpg",
+    img: images["customer-1.jpg"].default,
     name: "Jessica Sommer",
     parag:
       "Diam, urna, ornare leo facilisis suspendisse eu rutrum id augue cursus tincidunt nisl eget ornare pharetra ac pharetra, pulvinar ipsum sed amet diam morbi amet cursus blandit augue feugiat arcu aliquet egestas id diam.",
   },
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/customer-1.jpg",
+    img: images["customer-img.jpg"].default,
     name: "Bryan Lambert",
     parag:
       "Diam, urna, ornare leo facilisis suspendisse eu rutrum id augue cursus tincidunt nisl eget ornare pharetra ac pharetra, pulvinar ipsum sed amet diam morbi amet cursus blandit augue feugiat arcu aliquet egestas id diam.",
   },
   {
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/customer-img1.jpg",
+    img: images["customer-img1.jpg"].default,
     name: "Kristin Foster",
     parag:
       "Diam, urna, ornare leo facilisis suspendisse eu rutrum id augue cursus tincidunt nisl eget ornare pharetra ac pharetra, pulvinar ipsum sed amet diam morbi amet cursus blandit augue feugiat arcu aliquet egestas id diam.",
@@ -178,24 +182,20 @@ export const titles = {
         <button className="reserv btn">MAKE RESERVATION</button>
       </>
     ),
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/hero-bg.jpg",
+    img: images["hero-bg.jpg"].default,
   },
   about: {
     html: <h1>Who Are We</h1>,
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/about-bg.jpg",
+    img: images["about-bg.jpg"].default,
   },
 
   menu: {
     html: <h1>The Menu</h1>,
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/menu-bg.jpg",
+    img: images["menu-bg.jpg"].default,
   },
 
   contact: {
     html: <h1>Get In Touch</h1>,
-    img:
-      "https://websitedemos.net/steak-house-08/wp-content/uploads/sites/848/2021/05/contact.jpg",
+    img: images["contact.jpg"].default,
   },
 };

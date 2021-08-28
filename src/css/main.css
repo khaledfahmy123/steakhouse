@@ -42,6 +42,10 @@ h5 {
   font-size: 22px;
 }
 
+article {
+  box-sizing: border-box;
+}
+
 /*=========================== Header start =======================*/
 
 header {
@@ -133,6 +137,7 @@ p {
   align-items: center;
   width: 100%;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .dishes article img {
@@ -224,6 +229,7 @@ p {
   grid-gap: 50px;
   text-align: center;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .info img {
