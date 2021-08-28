@@ -1,0 +1,99 @@
+.contact .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "h2 h2"
+    "h3 h3"
+    "p p"
+    "map form";
+  grid-gap: 20px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  grid-area: h2;
+  margin: 0;
+}
+.contact h3 {
+  grid-area: h3;
+  margin: 0;
+}
+.contact p {
+  grid-area: p;
+  margin-top: 0;
+}
+
+.contact article {
+  width: 100%;
+}
+
+.contact .map {
+  grid-area: map;
+  height: 100%;
+}
+
+.contact form {
+  grid-area: form;
+  background: var(--bg-light-clr);
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.contact form input,
+.contact textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75em;
+  box-sizing: border-box;
+  margin: 10px 0;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+  background: #fafafa;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+.contact form h2 {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.contact form .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .name input {
+  width: 48%;
+}
+
+.contact textarea {
+  height: 120px;
+}
+
+.contact form .submit {
+  height: auto;
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .contact .container {
+    grid-template-areas:
+      "h2 h2"
+      "h3 h3"
+      "p p"
+      "map map"
+      "form form";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact form .name {
+    flex-direction: column;
+  }
+  .contact .name input {
+    width: 100%;
+  }
+}

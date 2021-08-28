@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+:root {
+  --s-clr: #efa765;
+  --n-clr: #fff;
+  --h-clr: #000;
+  --bg-dark-clr: #1d1922;
+  --bg-light-clr: #2d2d38;
+  --light-clr: #b8b8be;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round";
+}
+
+nav {
+  width: 94%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-areas: "logo . ul . btn";
+  margin: 0 auto;
+  padding: 25px 0;
+  align-items: center;
+  height: 3.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  grid-area: ul;
+  transition: all 0.2s ease;
+}
+
+nav ul li {
+  margin: 0;
+  height: 100%;
+  padding: 0 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: var(--n-clr);
+}
+
+ul li:hover {
+  color: var(--s-clr);
+}
+
+.active {
+  color: var(--s-clr);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--n-clr);
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: "Yeseva One";
+  grid-area: logo;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--s-clr);
+}
+
+.btn {
+  grid-area: btn;
+  height: 100%;
+  border: 2px solid var(--n-clr);
+  background: none;
+  cursor: pointer;
+  color: var(--n-clr);
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  letter-spacing: 1.2px;
+  border-radius: 0;
+}
+
+nav .btn {
+  max-width: 180px;
+}
+
+.btn:hover {
+  background: var(--n-clr);
+  color: var(--h-clr);
+}
+
+.bar-btn {
+  grid-area: bar;
+  display: none;
+  justify-self: end;
+  padding: 15px 30px;
+  border: none;
+}
+
+.bar-btn .icon {
+  color: inherit;
+}
+
+.bar-btn:hover .icon {
+  color: var(--s-clr);
+}
+
+.close {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "logo ul btn";
+  }
+}
+
+@media screen and (max-width: 920px) {
+  nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo ul";
+  }
+  nav button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bar-btn {
+    display: block;
+  }
+  nav {
+    grid-template-areas: "logo bar" "ul ul";
+  }
+  nav a {
+    justify-self: start;
+  }
+  nav ul {
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    width: 0%;
+    max-width: 90%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    margin: 0;
+    top: 0;
+    right: 0;
+  }
+  .close {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    align-self: flex-end;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: cursive;
+    cursor: pointer;
+  }
+  nav ul li {
+    padding: 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    max-height: 81px;
+    box-sizing: border-box;
+    border: 1px solid var(--bg-light-clr);
+    border-left: none;
+    border-right: none;
+  }
+}
