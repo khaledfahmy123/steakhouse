@@ -110,6 +110,7 @@ nav .btn {
 
 .close {
   display: none;
+  font-family: tahoma;
 }
 
 @media screen and (max-width: 1024px) {
