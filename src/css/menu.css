@@ -37,8 +37,12 @@
     grid-template-columns: 1fr;
   }
 
-  .recipe article {
+  .recipe .txt {
     padding: 48px;
+  }
+
+  .recipe img {
+    min-height: 100vw;
   }
 
   .odd {

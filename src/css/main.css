@@ -1,8 +1,34 @@
-body {
-  background: url("./../imgs/food-1.jpg") no-repeat center center fixed;
+:root {
+  --back-img: url("./../imgs/contact.jpg");
+}
+
+html {
+  height: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: var(--back-img) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+
+body {
+  height: 100%;
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--bg-dark-clr);
+  background-position: center;
+  background-attachment: fixed; */
+  /* background-color: var(--bg-dark-clr); */
 }
 
 .container {

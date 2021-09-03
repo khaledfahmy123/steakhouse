@@ -45,9 +45,11 @@ const Lpage = () => {
 
 const Header = (props) => {
   const { tab } = useContext(TabContext);
-  //
-  // document.body.style.background =
-  //   "url(" + titles[tab]["img"] + ") no-repeat center center fixed";
+
+  document.documentElement.style.setProperty(
+    "--back-img",
+    "url(" + titles[tab]["img"] + ")"
+  );
 
   return (
     <>
@@ -158,7 +160,7 @@ const About = () => {
 const Recipe = (rec) => {
   return (
     <main className={rec.num % 2 == 0 ? "recipe" : "recipe odd"}>
-      <img src={rec.img} alt={rec.name}></img>
+      <img src={rec.img} alt={rec.name} />
       <article>
         <h2>{rec.name}</h2>
         <div>
