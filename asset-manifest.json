@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/steakhouse/static/css/main.db11fdd9.chunk.css",
-    "main.js": "/steakhouse/static/js/main.435f39b0.chunk.js",
-    "main.js.map": "/steakhouse/static/js/main.435f39b0.chunk.js.map",
+    "main.js": "/steakhouse/static/js/main.94707edd.chunk.js",
+    "main.js.map": "/steakhouse/static/js/main.94707edd.chunk.js.map",
     "runtime-main.js": "/steakhouse/static/js/runtime-main.c9ac63f5.js",
     "runtime-main.js.map": "/steakhouse/static/js/runtime-main.c9ac63f5.js.map",
     "static/js/2.bb5cf1cf.chunk.js": "/steakhouse/static/js/2.bb5cf1cf.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.c9ac63f5.js",
     "static/js/2.bb5cf1cf.chunk.js",
     "static/css/main.db11fdd9.chunk.css",
-    "static/js/main.435f39b0.chunk.js"
+    "static/js/main.94707edd.chunk.js"
   ]
 }
