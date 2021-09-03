@@ -45,10 +45,9 @@ const Lpage = () => {
 
 const Header = (props) => {
   const { tab } = useContext(TabContext);
-  const { imgsLoaded, setImgsLoaded } = useState(false);
-
-  document.body.style.background =
-    "url(" + titles[tab]["img"] + ") no-repeat center center fixed";
+  //
+  // document.body.style.background =
+  //   "url(" + titles[tab]["img"] + ") no-repeat center center fixed";
 
   return (
     <>

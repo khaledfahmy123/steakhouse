@@ -20,8 +20,6 @@ const images = importAll(
   require.context("./../imgs", false, /\.(png|jpe?g|svg)$/)
 );
 
-// console.log(images["food-1.jpg"].default);
-
 export const dishes = [
   {
     img: images["food-1.jpg"].default,
