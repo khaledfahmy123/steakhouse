@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/steakhouse/static/css/main.6bce1476.chunk.css",
+    "main.css": "/steakhouse/static/css/main.9f035dab.chunk.css",
     "main.js": "/steakhouse/static/js/main.94707edd.chunk.js",
     "main.js.map": "/steakhouse/static/js/main.94707edd.chunk.js.map",
     "runtime-main.js": "/steakhouse/static/js/runtime-main.c9ac63f5.js",
@@ -8,7 +8,7 @@
     "static/js/2.bb5cf1cf.chunk.js": "/steakhouse/static/js/2.bb5cf1cf.chunk.js",
     "static/js/2.bb5cf1cf.chunk.js.map": "/steakhouse/static/js/2.bb5cf1cf.chunk.js.map",
     "index.html": "/steakhouse/index.html",
-    "static/css/main.6bce1476.chunk.css.map": "/steakhouse/static/css/main.6bce1476.chunk.css.map",
+    "static/css/main.9f035dab.chunk.css.map": "/steakhouse/static/css/main.9f035dab.chunk.css.map",
     "static/js/2.bb5cf1cf.chunk.js.LICENSE.txt": "/steakhouse/static/js/2.bb5cf1cf.chunk.js.LICENSE.txt",
     "static/media/about-bg.jpg": "/steakhouse/static/media/about-bg.54448ddc.jpg",
     "static/media/contact.jpg": "/steakhouse/static/media/contact.5153ca7b.jpg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.c9ac63f5.js",
     "static/js/2.bb5cf1cf.chunk.js",
-    "static/css/main.6bce1476.chunk.css",
+    "static/css/main.9f035dab.chunk.css",
     "static/js/main.94707edd.chunk.js"
   ]
 }
