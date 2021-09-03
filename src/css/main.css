@@ -20,15 +20,12 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: var(--bg-dark-clr);
 }
 
 body {
   height: 100%;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; */
-  /* background-color: var(--bg-dark-clr); */
+  background-color: var(--bg-dark-clr);
 }
 
 .container {
@@ -70,6 +67,15 @@ h5 {
 
 article {
   box-sizing: border-box;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /*=========================== Header start =======================*/
@@ -286,6 +292,7 @@ p {
   color: var(--n-clr);
   font-size: 25px;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .icon:hover {
